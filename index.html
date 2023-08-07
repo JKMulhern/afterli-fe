@@ -9,14 +9,21 @@
 <body>
     <h1>Afterli.fe</h1>
     <h2>Choose your food and I'll tell ya what ya farts will smell like!</h2>
-    <form id="food-form">
+    <form id="add-food-form">
+  	<label for="food-name">Food Name:</label>
+  	<input type="text" id="food-name" name="food-name" required>
+  	<label for="food-smell">Smell Description:</label>
+  	<input type="text" id="food-smell" name="food-smell" required>
+  	<button type="submit">Add Food</button>
+   </form>
+   <form id="food-form">
         <label for="food-select">Choose a food:</label>
         <select id="food-select">
             <!-- Add options for food items here -->
         </select>
         <button type="button" onclick="predictSmell()">Predict Smell</button>
-    </form>
-    <div id="result"></div>
-    <script src="script.js"></script>
+   </form>
+   <div id="result"></div>
+   <script src="script.js"></script>
 </body>
 </html>

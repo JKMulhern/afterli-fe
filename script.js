@@ -10,6 +10,26 @@ var foodSmells = {
   "Pineapple": "Faintly sweet smell",
   // Add more food items here with corresponding after-digestion smells
 };
+document.getElementById("add-food-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+  
+  var foodName = document.getElementById("food-name").value;
+  var foodSmell = document.getElementById("food-smell").value;
+  
+  // Add the new food and smell to the foodSmells object
+  foodSmells[foodName] = foodSmell;
+  
+  // Update the dropdown list
+  var dropdown = document.getElementById("food-dropdown");
+  var option = document.createElement("option");
+  option.value = foodName;
+  option.text = foodName;
+  dropdown.add(option);
+  
+  // Optional: Clear the input fields
+  document.getElementById("food-name").value = "";
+  document.getElementById("food-smell").value = "";
+});
 
 // Function to populate the dropdown with food items
 function populateDropdown() {
