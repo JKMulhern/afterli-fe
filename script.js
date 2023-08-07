@@ -1,9 +1,14 @@
 // Database of food smells
 var foodSmells = {
-  "Eggs": "Sulphuric smell",
-  "Coffee": "Rich, aromatic smell",
-  // Add other food items here
-  "Tomatoes": "Sweet, acidic smell"
+  "Eggs": "Strong, sulfurous smell",
+  "Coffee": "Bitter, acrid smell",
+  "Fish": "Mildly fishy smell",
+  "Cheese": "Rich, cheesy smell",
+  "Garlic": "Pungent, lingering smell",
+  "Broccoli": "Strong, earthy smell",
+  "Bacon": "Slightly smoky smell",
+  "Pineapple": "Faintly sweet smell",
+  // Add more food items here with corresponding after-digestion smells
 };
 
 // Function to populate the dropdown with food items
