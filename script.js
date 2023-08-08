@@ -8,7 +8,6 @@ var foodSmells = {
   "Broccoli": "Strong, earthy farts",
   "Bacon": "Slightly smoky but still disgusting",
   "Pineapple": "Faintly sweet, good for sbd farts"
-  // Add more food items here with corresponding after-digestion smells
 };
 
 // Function to populate the dropdown
@@ -53,4 +52,3 @@ function predictSmell() {
   var predictedSmell = foodSmells[selectedFood] || "Food not found in the database";
   resultDiv.innerHTML = "The predicted smell for " + selectedFood + " is: " + predictedSmell;
 }
-

@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afterli.fe - Food Smell Predictor</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afterli.fe</title>
+  <link rel="stylesheet" href="styles.css"> <!-- If you have a CSS file -->
 </head>
 <body>
-    <h1>Afterli.fe</h1>
-    <h2>Choose your food and I'll tell ya what ya farts will smell like!</h2>
-    <form id="add-food-form">
-  	<label for="food-name">Food Name:</label>
-  	<input type="text" id="food-name" name="food-name" required>
-  	<label for="food-smell">Smell Description:</label>
-  	<input type="text" id="food-smell" name="food-smell" required>
-  	<button type="submit">Add Food</button>
-   </form>
-   <form id="food-form">
-        <label for="food-select">Choose a food:</label>
-        <select id="food-dropdown">
-            <!-- Add options for food items here -->
-        </select>
-        <button type="button" onclick="predictSmell()">Predict Smell</button>
-   </form>
-   <div id="result"></div>
-   <script src="script.js"></script>
+  <h1>Afterli.fe - Food Smell Predictor</h1>
+
+  <form id="add-food-form">
+    <label for="food-name">Food Name:</label>
+    <input type="text" id="food-name" name="food-name" required>
+    <label for="food-smell">Smell Description:</label>
+    <input type="text" id="food-smell" name="food-smell" required>
+    <button type="submit">Add Food</button>
+  </form>
+
+  <select id="food-dropdown">
+    <!-- Options will be added here -->
+  </select>
+
+  <button onclick="predictSmell()">Predict Smell</button>
+  <div id="result"></div>
+
+  <script src="script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>
+
